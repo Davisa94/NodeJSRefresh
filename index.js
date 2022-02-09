@@ -6,6 +6,21 @@
  * The Server Version is another project for the future
  **************************************************/
 
+
+
+/**************************************************
+ * A function which takes ana rray and prints each
+ * index on its own line.
+ **************************************************/
+function arrayPrinter(array)
+{
+   for(var item in array)
+   {
+      console.log(array[item]);
+   }
+}
+
+
 /**************************************************
  * The Main logic function for determining if the 
  * given number is fizz buzz or the number given
@@ -38,7 +53,6 @@ function fizzBuzzLogic(number)
 function generateFizzBuzzArray(max)
 {
    return Array.from({length:100}, function (_,i){
-      console.log(i);
       return fizzBuzzLogic(i);
     });
 }
@@ -47,8 +61,8 @@ function generateFizzBuzzArray(max)
 
 function main()
 {
-   console.log(generateFizzBuzzArray());
-   console.log(Array.from({length:100}));
+   // print each item on a newline
+   arrayPrinter(generateFizzBuzzArray());
    return 0;
 }
 
