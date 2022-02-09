@@ -5,3 +5,14 @@
  * This is a JS implimentation of FizzBuzz via CLI
  * The Server Version is another project for the future
  **************************************************/
+
+function main()
+{
+   return 0;
+}
+
+
+
+
+
+main()
