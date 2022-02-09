@@ -24,7 +24,7 @@ function fizzBuzzLogic(number)
    {
       determinedValue += "Buzz"
    }
-   if(determinedValue = "")
+   if(determinedValue == "")
    {
       determinedValue = number;
    }
