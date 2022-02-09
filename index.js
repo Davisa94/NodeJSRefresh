@@ -15,16 +15,16 @@
  *************************************************/
 function fizzBuzzLogic(number)
 {
-   determinedValue = "";
+   var determinedValue = "";
    if(number % 3 == 0)
    {
-      determinedValue = "Fizz"
+      determinedValue += "Fizz"
    }
    if(number % 5 == 0)
    {
       determinedValue += "Buzz"
    }
-   else
+   if(determinedValue = "")
    {
       determinedValue = number;
    }
@@ -32,13 +32,23 @@ function fizzBuzzLogic(number)
 }
 
 /***************************************************
- * The function that generates the 
- */
+ * The function that generates the array of values 
+ * either fizz, buzz or the given number.
+ **************************************************/
+function generateFizzBuzzArray(max)
+{
+   return Array.from({length:100}, function (_,i){
+      console.log(i);
+      return fizzBuzzLogic(i);
+    });
+}
 
 
 
 function main()
 {
+   console.log(generateFizzBuzzArray());
+   console.log(Array.from({length:100}));
    return 0;
 }
 
